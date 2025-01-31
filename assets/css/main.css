@@ -1190,6 +1190,15 @@ section,
     display: none;
   }
 }
+/* Ensure all portfolio images have equal size and are zoomed out */
+.portfolio-item img {
+  width: 100%;               /* Ensure the image fills the container width */
+  height: 300px;             /* Set a fixed height for the image */
+  object-fit: cover;         /* Preserve aspect ratio and cover the container */
+  object-position: center;   /* Center the image in the container */
+  transform: scale(0.9);     /* Zoom out the image by 10% (adjust as needed) */
+  border-radius: 8px;        /* Optional: Add rounded corners for a smooth look */
+}
 
 .portfolio-details .swiper-pagination {
   margin-top: 20px;
